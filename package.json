@@ -4,16 +4,32 @@
   "description": "",
   "module": "dist/index.js",
   "scripts": {
-    "start": "tsc --watch",
-    "build": "tsc"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "d3": "^7.5.0",
+    "d3-selection": "^3.0.0",
+    "d3-format": "^3.1.0",
+    "d3-scale": "^4.0.2",
+    "d3-axis": "^3.0.0",
+    "d3-array": "^3.2.4",
     "lodash": "^4.17.21",
-    "typescript": "^4.7.4",
     "vega-scale": "6.0.0"
-  }
+  },
+  "devDependencies": {
+    "@deck.gl/core": "^9.1.14",
+    "@deck.gl/layers": "^9.1.14",
+    "vitest": "^3.2.4",
+    "vite": "^6.1.1",
+    "jsdom": "^26.1.0",
+    "vitest-canvas-mock": "^0.3.3",
+    "typescript": "^5.9"
+  },
+  "packageManager": "pnpm@9.7.0"
 }

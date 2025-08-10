@@ -1,8 +1,12 @@
+import d3 from './d3.js';
+import { TwoCircle, TwoLine, TwoPath, TwoRectangle, TwoText } from './shapes.js';
+
 export function initSvg(width, height) {
   const svg = d3.create('svg');
   svg
       .attr("width", width)
-      .attr("height", height);
+      .attr("height", height)
+      .attr("xmlns", "http://www.w3.org/2000/svg");
   
   const g = svg
       .append("g")

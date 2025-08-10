@@ -10,3 +10,11 @@ Roadmap:
   - subset of layer props, specifically those that have straightforward analogs in SVG (position, size, color, opacity, rotation, etc.)
   - `viewState`
   - subset of views, specifically 2D ones (`OrthographicView`)
+
+
+## Development
+
+```sh
+pnpm install
+
+```

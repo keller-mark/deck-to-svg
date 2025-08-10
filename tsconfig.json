@@ -7,7 +7,7 @@
       "DOM.Iterable",
       "ESNext"
     ],
-    "moduleResolution": "Node",
+    "moduleResolution": "Bundler",
     "strict": true,
     "allowJs": true,
     "skipLibCheck": true,
