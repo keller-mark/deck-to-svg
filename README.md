@@ -10,3 +10,18 @@ Roadmap:
   - subset of layer props, specifically those that have straightforward analogs in SVG (position, size, color, opacity, rotation, etc.)
   - `viewState`
   - subset of views, specifically 2D ones (`OrthographicView`)
+
+
+## Development
+
+```sh
+pnpm install
+```
+
+### Start demo site
+
+```sh
+pnpm run start-demo
+```
+
+Open browser to http://localhost:5173/deck-to-svg/

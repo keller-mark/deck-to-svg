@@ -7,7 +7,7 @@
       "DOM.Iterable",
       "ESNext"
     ],
-    "moduleResolution": "Node",
+    "moduleResolution": "Bundler",
     "strict": true,
     "allowJs": true,
     "skipLibCheck": true,
@@ -16,5 +16,10 @@
     "isolatedModules": true,
     "outDir": "dist",
     "rootDir": "src"
-  }
+  },
+  "references": [
+    { "path": "lib" },
+    { "path": "demo" }
+  ],
+  "files": []
 }

@@ -1,0 +1,31 @@
+name: Test
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  unit_test:
+    runs-on: ubuntu-latest
+    name: Run unit tests
+    steps:
+      - uses: actions/checkout@v3
+        # Reference: https://github.com/changesets/changesets/issues/517#issuecomment-1182094769
+        with:
+          ref: ${{github.event.pull_request.head.sha}}
+          fetch-depth: 0
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 20
+          registry-url: https://registry.npmjs.org/
+      - uses: pnpm/action-setup@v4
+        name: Install pnpm
+        id: pnpm-install
+        with:
+          run_install: true
+      - name: Build
+        run: pnpm run build:ci
+      - run: pnpm run test
