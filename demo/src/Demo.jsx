@@ -47,8 +47,7 @@ export function Demo() {
         const svg = deckToSvg(params);
         const promise = deckToCanvas(params);
 
-        promise.then(({ deck }) => {
-            const { canvas } = deck;
+        promise.then(({ canvas }) => {
             if(canvas) {
                 const ctx2 = canvasRef.current.getContext('2d');
                 ctx2.drawImage(canvas, 0, 0);

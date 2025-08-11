@@ -17,6 +17,8 @@ export default defineConfig({
       jsdom: {
         resources: 'usable'
       }
-    }
+    },
+    // Only run test files that are within src/
+    include: ['src/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
   }
 });

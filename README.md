@@ -16,5 +16,12 @@ Roadmap:
 
 ```sh
 pnpm install
-
 ```
+
+### Start demo site
+
+```sh
+pnpm run start-demo
+```
+
+Open browser to http://localhost:5173/deck-to-svg/
